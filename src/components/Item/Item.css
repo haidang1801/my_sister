@@ -1,0 +1,28 @@
+.item{
+    width: 350px;
+}
+.item img{
+    width: 350px;
+    height: 350px;
+}
+.item p{
+    margin: 6px 0px;
+}
+.item-properties{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.item-button{
+    padding-left: 1rem;  /* px-4 */
+    padding-right: 1rem; /* px-4 */
+    padding-top: 0.5rem; /* py-2 */
+    padding-bottom: 0.5rem; /* py-2 */
+    background-color: #d1d5db; /* bg-gray-300 (light gray) */
+    border-radius: 0.25rem; /* rounded (default border-radius) */
+    cursor: pointer;
+}
+.item-text{
+    padding: 0.5rem;
+}
