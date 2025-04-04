@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {fine} from '../components/Assets/le/5_le/fine'
+import {fine} from '../components/Assets/le/fine'
 import Item from "../components/Item/Item";
 import './css/Fine.css'
 
@@ -23,7 +23,6 @@ const Fine = () => {
       setCurrentPage((prev) => prev - 1);
     }
   };
-
   return (
     <div className='fine'>
       <h1>TRÁP 5 LỄ</h1>

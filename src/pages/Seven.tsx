@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {seven} from '../components/Assets/le/7_le/7_le'
+import {seven} from '../components/Assets/le/seven'
 import Item from "../components/Item/Item";
 import './css/Seven.css'
 

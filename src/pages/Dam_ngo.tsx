@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {dam_ngo} from '../components/Assets/dam_ngo/dam_ngo'
+import {dam_ngo} from '../components/Assets/dam_ngo'
 import Item from "../components/Item/Item";
 import './css/Dam_ngo.css'
 

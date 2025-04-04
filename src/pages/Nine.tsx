@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {nine} from '../components/Assets/le/9_le/9_le'
+import {nine} from '../components/Assets/le/nine'
 import Item from "../components/Item/Item";
 import './css/Nine.css'
 
