@@ -1,28 +1,97 @@
-.item{
-    width: 350px;
+/* Item Styles */
+.item {
+    width: 100%;
 }
-.item img{
-    width: 350px;
-    height: 350px;
+
+/* Image inside item */
+.item img {
+    width: 100%;  /* Makes image responsive */
+    height: 250px; /* Maintain aspect ratio */
+    border-radius: 0.25rem;
 }
-.item p{
+
+/* Paragraph inside item */
+.item p {
     margin: 6px 0px;
 }
-.item-properties{
+
+/* Item properties container */
+.item-properties {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
 }
-.item-button{
-    padding-left: 1rem;  /* px-4 */
-    padding-right: 1rem; /* px-4 */
-    padding-top: 0.5rem; /* py-2 */
-    padding-bottom: 0.5rem; /* py-2 */
-    background-color: #d1d5db; /* bg-gray-300 (light gray) */
-    border-radius: 0.25rem; /* rounded (default border-radius) */
+
+/* Button inside item */
+.item-button {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #d1d5db;
+    border-radius: 0.25rem;
     cursor: pointer;
 }
-.item-text{
+
+/* Item text padding */
+.item-text {
     padding: 0.5rem;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For Tablets and Smaller Devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .item {
+        width: 90%;  /* Reduce item width for tablets */
+        margin: 15px auto;  /* Center the item with automatic margins */
+    }
+
+    .item img {
+        width: 100%;  /* Ensure the image fills the container */
+        height: 250px;
+    }
+
+    .item-properties {
+        flex-direction: column; /* Stack properties vertically */
+        /* gap: 10px;  Add spacing between the items */
+    }
+
+    .item-button {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+    .item-text {
+        padding: 0;
+    }
+}
+
+/* For Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .item {
+        width: 90%;  /* Further reduce width for mobile */
+        margin: 10px auto;  /* Center the item with small margins */
+    }
+
+    .item img {
+        width: 100%;  /* Ensure image is fully responsive */
+        height: 250px;
+    }
+
+    .item-properties {
+        flex-direction: column;  /* Stack properties vertically */
+        /* gap: 15px;  Increase gap between properties on small screens */
+    }
+
+    .item-button {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-top: 0.4rem;
+        padding-bottom: 0.4rem;  /* Smaller padding on mobile */
+    }
+
+    .item-text {
+        padding: 0px;  /* Reduce padding inside text container */
+    }
 }

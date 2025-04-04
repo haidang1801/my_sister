@@ -1,62 +1,127 @@
-.dam-ngo{
+/* dam-ngo Section */
+.dam-ngo {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5px;
-    height: 10px;
+    height: auto; /* Adjust height to auto instead of fixed to fit content */
 }
-.dam-ngo h1{
-    margin-top: 10px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
+
+/* Heading styles */
+.dam-ngo h1 {
+    margin: 10px 0 0;
     color: #656769;
     font-size: 50px;
     font-weight: 500;
 }
-.dam-ngo hr{
+
+/* Horizontal line styles */
+.dam-ngo hr {
     width: 200px;
-    height: 6px;
+    height: 2px;
     border-radius: 10px;
-    background: #252525;
+    background: #656769;
+    margin-block: 0px;
 }
-.dam-ngo-item{
+
+/* dam-ngo-item grid styles */
+.dam-ngo-item {
     margin: 20px 170px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 50px;
-    column-gap: 40px;
+    column-gap: 70px;
 }
-.dam-ngo-button-before{
-    padding-left: 1rem;  /* px-4 */
-    padding-right: 1rem; /* px-4 */
-    padding-top: 0.5rem; /* py-2 */
-    padding-bottom: 0.5rem; /* py-2 */
-    background-color: #d1d5db; /* bg-gray-300 (light gray) */
-    border-radius: 0.25rem; /* rounded (default border-radius) */
+
+/* Button before styles */
+.dam-ngo-button-before {
+    padding-left: 1rem; 
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #d1d5db;
+    border-radius: 0.25rem;
     cursor: pointer;
 }
-.dam-ngo-button-before:disabled{
-    opacity: 0.5; /* disabled:opacity-50 */
+
+/* Disabled button before styles */
+.dam-ngo-button-before:disabled {
+    opacity: 0.5;
     cursor: default;
 }
-.dam-ngo-button-after{
-    padding-left: 1rem;   /* px-4 */
-    padding-right: 1rem;  /* px-4 */
-    padding-top: 0.5rem;  /* py-2 */
-    padding-bottom: 0.5rem; /* py-2 */
-    background-color: #d1d5db;  /* bg-gray-300 */
-    border-radius: 0.25rem;  /* rounded */
+
+/* Button after styles */
+.dam-ngo-button-after {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #d1d5db;
+    border-radius: 0.25rem;
     cursor: pointer;
 }
-.dam-ngo-button-after:disabled{
-    opacity: 0.5; /* disabled:opacity-50 */
+
+/* Disabled button after styles */
+.dam-ngo-button-after:disabled {
+    opacity: 0.5;
     cursor: default;
 }
-.dam-ngo-text-page{
+
+/* dam-ngo text page */
+.dam-ngo-text-page {
     padding: 0.5rem;
 }
-.dam-ngo-page{
+
+/* Page container */
+.dam-ngo-page {
     display: flex;
     justify-content: center;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For Tablets and Smaller Devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .dam-ngo h1 {
+        font-size: 36px; /* Smaller font size on smaller screens */
+    }
+
+    .dam-ngo-item {
+        margin: 20px 50px;
+        grid-template-columns: 1fr 1fr; /* Two-column grid for tablets */
+        column-gap: 40px;
+        row-gap: 15px;
+    }
+
+    .dam-ngo hr {
+        width: 150px; /* Reduce the width of the horizontal line */
+    }
+
+    .dam-ngo-button-before, .dam-ngo-button-after {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+}
+
+/* For Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .dam-ngo h1 {
+        font-size: 28px; /* Further reduce font size on mobile */
+    }
+
+    .dam-ngo-item {
+        margin: 20px 20px;
+        grid-template-columns: 1fr; /* Single-column grid on mobile */
+        row-gap: 15px;
+    }
+
+    .dam-ngo hr {
+        width: 120px; /* Further reduce the width of the horizontal line */
+        margin-block-end: 0px;
+    }
+
+    .dam-ngo-button-before, .dam-ngo-button-after {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
 }
